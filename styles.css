@@ -104,3 +104,23 @@ td.price{font-size:18px;font-weight:600}
 @media(max-width:760px){html{scroll-padding-top:24px}.wrap{width:calc(100% - 46px)}.header-inner{min-height:84px}.brand{font-size:21px;gap:9px}.brand-mark{width:32px;height:38px}.brand-mark:after{font-size:25px}.header-call{padding:12px;font-size:12px}.header-call span{margin-left:7px}nav{font-size:13px}.hero{grid-template-columns:1fr;gap:33px;padding-top:22px;padding-bottom:23px}.hero-copy{padding-top:12px}.hero h1{font-size:46px;letter-spacing:-2px}.hero .eyebrow{font-size:12px;letter-spacing:1.2px}.intro{font-size:16px}.hero .actions{margin-top:26px;gap:18px}.button{font-size:15px;padding:17px 19px;gap:20px}.hero-note{font-size:12px;letter-spacing:.3px;margin-top:28px}.hero-photo{height:390px}.hero-photo>img{object-position:center 52%}.hero-photo figcaption{bottom:22px;left:23px}.hero-photo strong{font-size:25px}.quick-inner{padding-block:19px;gap:13px 8px}.quick-inner>a{font-size:12px}.section{padding-block:60px}h2{font-size:30px;letter-spacing:-1.2px}.eyebrow{font-size:12px;margin-bottom:20px}.section-heading{margin-bottom:28px}.symptom-grid{grid-template-columns:1fr 1fr;gap:1px}.symptom summary{padding:23px 18px;min-height:188px}.number{font-size:12px;letter-spacing:.4px;margin-bottom:25px}.symptom h3{font-size:18px;line-height:1.5}.detail-body{padding:0 18px 23px;font-size:14px}.price-note strong{font-size:17px}.price-note p{font-size:14px}.extra-prices{padding-inline:18px}.extra-prices summary{font-size:16px;gap:15px}.case-grid{grid-template-columns:1fr;gap:35px}.case-image{height:330px}.case-card h3{font-size:23px;margin-top:20px}.check-section{padding-block:60px}.check-layout{grid-template-columns:1fr;gap:32px}.contact{grid-template-columns:1fr;gap:35px;padding:60px 0}.contact h2{font-size:32px}.contact p{font-size:15px}.contact-actions{border:0;padding:0}.phone{font-size:34px}.contact-actions>p{font-size:12px}.footer{padding-top:30px;padding-bottom:110px}.mobile-contact{background:var(--blue);gap:0;padding:0 12px env(safe-area-inset-bottom);min-height:62px;box-shadow:0 -3px 18px #102d4320}.mobile-contact a{background:transparent!important;border:0;border-radius:0;color:white;font-size:13px;padding:18px 10px}.mobile-contact a:first-child{border-right:1px solid #ffffff55}.mobile-contact a:last-child{font-size:14px}}
 @media(max-width:370px){.symptom-grid{grid-template-columns:1fr}.hero h1{font-size:40px}.phone{font-size:29px}.mobile-contact a:last-child{font-size:12px}.hero .actions{align-items:start;flex-direction:column}}
 @media print{.hero,.contact{box-shadow:none;clip-path:none;background:white;color:var(--ink)}.hero .intro,.hero .eyebrow,.contact p,.contact .eyebrow,.phone{color:var(--ink)}.contact{padding-block:25px}.check-section{padding-block:25px}}
+
+/* Service priority and broadcast introduction, October 2026. */
+.hero{align-items:center}
+.broadcast-hero{height:auto;min-height:0;overflow:visible;background:transparent}
+.broadcast-hero>img{width:100%;height:auto;object-fit:contain;object-position:center}
+.broadcast-hero:after{display:none}
+.broadcast-hero figcaption{position:static;padding:25px 0 0;display:block}
+.broadcast-hero figcaption span{display:block;color:#8ccfff;margin-bottom:10px}
+.broadcast-hero figcaption strong{font-size:27px}
+.broadcast-hero figcaption p{font-size:12px;color:#b9ccda;margin-top:12px}
+.other-services,.secondary-case{border-block:1px solid var(--line);margin-top:25px}
+.other-services>summary,.secondary-case>summary{list-style:none;display:flex;justify-content:space-between;gap:15px;padding:20px 0;font-size:16px;font-weight:600;cursor:pointer}
+.other-services>summary::-webkit-details-marker,.secondary-case>summary::-webkit-details-marker{display:none}
+.other-services>summary span,.secondary-case>summary span{color:var(--blue)}
+.other-services[open]>summary span,.secondary-case[open]>summary span{transform:rotate(45deg)}
+.other-services>p{margin-bottom:20px;font-size:14px}
+.other-services .symptom-grid{margin-bottom:24px}
+.secondary-case>.case-card{display:block;max-width:650px;margin-bottom:28px}
+.primary-services{grid-template-columns:repeat(3,minmax(0,1fr))}
+@media(max-width:760px){.primary-services{grid-template-columns:1fr}.primary-services .symptom summary{min-height:0;padding:23px}.primary-services .number{margin-bottom:14px}.primary-services h3 br{display:none}.broadcast-hero{height:auto}.broadcast-hero figcaption{padding-top:20px}.broadcast-hero figcaption strong{font-size:23px}.hero-note{line-height:1.9}}
